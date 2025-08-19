@@ -1,0 +1,22 @@
+{
+  "name": "presentation-patterns-example",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-mvc": "nodemon src/mvc/index.js",
+    "start-mvvm": "nodemon src/mvvm/index.js",
+    "start-mvp": "nodemon src/mvp/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
