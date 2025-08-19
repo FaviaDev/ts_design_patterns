@@ -1,22 +1,21 @@
 // mvvm/viewmodels/TaskViewModel.js
 class TaskViewModel {
-    constructor(model, view) {
+    constructor(model) {
         this.model = model;
-        this.view = view;
     }
 
     addTask(description) {
         const task = this.model.addTask(description);
-        this.view.displayMessage(`Task added: ${task.description}`);
+        return `Task added: ${task.description}`;
     }
 
     listTasks() {
         const tasks = this.model.getTasks();
-        this.view.displayTasks(tasks);
+        return tasks;
     }
 
     exit() {
-        this.view.displayMessage('Goodbye!');
+        return 'Goodbye!';
     }
 }
 

@@ -4,8 +4,7 @@ import TaskView from './views/TaskView.js';
 import TaskViewModel from './viewmodels/TaskViewModel.js'
 
 const model = new TaskModel();
-const view = new TaskView(); // Crear la vista primero
-const viewModel = new TaskViewModel(model, view); // Pasar modelo y vista
-view.viewModel = viewModel; // Asignar el viewModel a la vista
+const viewModel = new TaskViewModel(model);
+const view = new TaskView(viewModel);
 
 view.render();

@@ -16,9 +16,14 @@ class TaskView {
 
             if (action === 'Add Task') {
                 const description = await this.getTaskDescription();
-                this.viewModel.addTask(description);
+                this.displayMessage(this.viewModel.addTask(description));
             } else if (action === 'List Tasks') {
-                this.viewModel.listTasks();
+                const tasks = this.viewModel.listTasks();
+                if (tasks.length === 0) {
+                    this.displayMessage('No tasks found.');
+                } else {
+                    this.displayTasks(tasks);
+                }
             }
         }
     }
