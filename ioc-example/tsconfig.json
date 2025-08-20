@@ -12,8 +12,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "sourceMap": true,
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["src/**/*", "index.ts", "tests/**/*"],
   "exclude": ["node_modules"],
