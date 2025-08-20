@@ -1,7 +1,7 @@
 // src/services/TaskService.ts
 import { injectable, inject } from 'inversify';
 import TYPES from '../container/types.ts';
-import TaskRepository from '../repositories/TaskRepository.ts';
+import type TaskRepository from '../repositories/TaskRepository.ts';
 import Task from '../models/Task.ts';
 
 @injectable()

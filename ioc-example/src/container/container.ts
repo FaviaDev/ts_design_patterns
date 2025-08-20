@@ -1,7 +1,7 @@
 // src/container/container.ts
 import { Container } from 'inversify';
 import TYPES from './types.ts';
-import TaskRepository from '../repositories/TaskRepository.ts';
+import type TaskRepository from '../repositories/TaskRepository.ts';
 import InMemoryTaskRepository from '../repositories/InMemoryTaskRepository.ts';
 import TaskService from '../services/TaskService.ts';
 import TaskView from '../views/TaskView.ts';

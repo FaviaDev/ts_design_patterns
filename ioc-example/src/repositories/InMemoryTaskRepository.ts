@@ -1,10 +1,10 @@
 // src/repositories/InMemoryTaskRepository.ts
 import { injectable } from 'inversify';
-import TaskRepository from './TaskRepository.ts';
+import type TaskRepository from './TaskRepository.ts';
 import Task from '../models/Task.ts';
 
 @injectable()
-export default class InMemoryTaskRepository extends TaskRepository {
+export default class InMemoryTaskRepository implements TaskRepository {
     private tasks: Task[] = [];
 
     addTask(description: string): Task {
