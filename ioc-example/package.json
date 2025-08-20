@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec ts-node index.ts"
+    "start": "nodemon --exec ts-node index.ts",
+    "dev": "bun --watch index.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
